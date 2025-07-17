@@ -1,0 +1,81 @@
+/* Import Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Keyframes untuk Animasi Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class untuk elemen yang akan dianimasikan */
+.animated-section {
+    opacity: 0;
+}
+
+/* Class yang ditambahkan oleh JavaScript saat elemen terlihat */
+.is-visible {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Pengaturan Dasar Body - **WARNA BARU TERANG** */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #F9FAFB, #FFFFFF); /* PERUBAHAN: Gradasi Abu-abu sangat terang ke putih */
+    min-height: 100vh;
+    color: #1F2937; /* PERUBAHAN: Warna teks utama menjadi abu-abu gelap agar mudah dibaca */
+    overflow-x: hidden;
+}
+
+/* Teks dengan Efek Gradasi - Warna Oranye/Emas dari Logo */
+.gradient-text {
+    background: linear-gradient(to right, #FBBF24, #F97316);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Desain Kartu untuk Tema Terang - **GAYA BARU** */
+.card {
+    background: #FFFFFF; /* PERUBAHAN: Latar kartu menjadi putih solid */
+    border: 1px solid #E5E7EB; /* PERUBAHAN: Border abu-abu terang */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* PERUBAHAN: Efek bayangan lembut */
+    transition: all 0.3s ease-out;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* PERUBAHAN: Efek bayangan lebih kuat saat hover */
+}
+
+/* Tombol Utama - Warna Oranye/Emas dari Logo */
+.btn-primary {
+    background: linear-gradient(to right, #F97316, #EA580C);
+    color: #FFFFFF; /* PERUBAHAN: Warna teks tombol menjadi putih */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+}
+
+/* Tombol Sekunder - Warna Oranye/Emas dari Logo */
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #F97316;
+    color: #F97316;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #F97316;
+    color: #FFFFFF; /* PERUBAHAN: Warna teks menjadi putih saat hover */
+    transform: translateY(-3px);
+}
